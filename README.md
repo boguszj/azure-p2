@@ -10,8 +10,7 @@
 
 
 ## Architektura + stos technologiczny
-  ![architecture](https://user-images.githubusercontent.com/46794180/144915538-e1894a46-5807-4970-bdb8-91fad38090d8.png)
-
+  ![architecture](https://user-images.githubusercontent.com/46794180/144919811-ce3fd6de-9ec7-449a-b20e-0d9ac5c76ae2.png)
   
 ### Scraper  
 Skrypt NodeJS działający w postaci Azure Functions aktualizujący dane w Blob Storage.
