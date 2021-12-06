@@ -1,4 +1,4 @@
-# NAZWA PROJEKTU
+# Salary Predictor
 
 ## Developerzy
 - [Bogusz Jakub](https://github.com/boguszj)
