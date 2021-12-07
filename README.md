@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=CkCQ-Hc8LcQ
 ## Architektura + stos technologiczny
   ![architecture](https://user-images.githubusercontent.com/46794180/144919811-ce3fd6de-9ec7-449a-b20e-0d9ac5c76ae2.png)
   
+  - **Salesforce** - platforma oferująca dostęp do aplikacji końcowej, to w niej wgrywamy zdjęcie które jest zapisywane i przekazywane do modułu Pythona.
+  
 ### Scraper  
 Skrypt NodeJS działający w postaci Azure Functions aktualizujący dane w Blob Storage.
 
