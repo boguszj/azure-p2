@@ -6,8 +6,8 @@
 - [Kalata Krzysztof](https://github.com/KrzysztofKalata)
 - [Ruciński Konrad](https://github.com/rucinsk1)
 
-## https://www.youtube.com/watch?v=CkCQ-Hc8LcQ
-
+## Link do prezentacji
+https://www.youtube.com/watch?v=CkCQ-Hc8LcQ
 
 ## Architektura + stos technologiczny
   ![architecture](https://user-images.githubusercontent.com/46794180/144919811-ce3fd6de-9ec7-449a-b20e-0d9ac5c76ae2.png)
