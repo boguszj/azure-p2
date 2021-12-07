@@ -19,7 +19,7 @@ Skrypt NodeJS działający w postaci Azure Functions aktualizujący dane w Blob 
 Model wytrenowany w Azure ML wystawiony przez Container Instance na świat.
 
 ### Salesforce
-Krzysiek pls
+GUI obsługujące strone klienta, komunikujące sie z modelem poprzez Cointainer Instance.
 
 ## Opis funkcjonalności
 - przewidywanie pensji dla podanego zestawu umiejętności,
@@ -45,9 +45,9 @@ W Azure ML studio stworzyliśmy notebook, który pozwala nam oczyścić dane: za
  
 Azure Machine Learning umożliwia tworzenie użytkownikowi pipeline'ów, które wykorzystaliśmy by rozdzielić dane na treningowe oraz testowe. Następnie wybraliśmy typ modelu, którego bedziemy używać. Po wytrenowaniu modelu stworzyliśmy Container Instance, które pozwala nam wystawić nasz model na świat z którym możemy się komunikować za pomocą API.
   
-### 5. KRZYSZTOF KALATA PUNKT
-  
-  
+### 5. Obsługa użytkownika końcowego
+
+Aplikacja Salesforce zbiera od użytkownika wszystkie potrzebne informacje, a następnie za pośrednictwerm REST API łączy się z Container Instance. Zwraca ono wyniki przeanalizowane przez model, które aplikacja wyświetla użytkownikowi.
 
 ## Schemat działania
   - użytkownik uruchamia aplikację w Salesforce,
