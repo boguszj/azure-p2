@@ -1,0 +1,29 @@
+<template>
+    <lightning-card if:true={firstStep} title="Enter your skills (min 1 - max 10)">
+        <lightning-combobox class="slds-p-around_medium lgc-bg" label="Advancement level:" options={advancementsLevel} onchange={choseAdvancementLevel}></lightning-combobox>
+        <template for:each={skillList} for:item="skill">
+            <div class="slds-p-around_medium lgc-bg slds-grid slds-gutters" key={skill.index}>
+                <lightning-combobox class="slds-col slds-size_9-of-12" key={skill.index} options={skills} onchange={choseSkill} label="Skill:"></lightning-combobox>
+                <lightning-input class="slds-col slds-size_2-of-12" key={skill.index} type='number' label="Advancement (1-5):" onchange={choseAdvancement}></lightning-input>
+                <lightning-button class="slds-col slds-size_1-of-12 custom-center" key={skill.index} value={skill.index} label="Remove" variant="destructive" onclick={handleRemove} disabled={isOneSkill}></lightning-button>
+            </div>
+        </template>
+        </br>
+        <div class="slds-m-top_small slds-m-bottom_medium slds-align_absolute-center">
+            <lightning-button class="slds-m-left_x-small" variant="brand" label="Add new skill" onclick={handleAdd} disabled={overLimit}></lightning-button>
+            <lightning-button class="slds-m-left_x-small" variant="success" label="Look for job" onclick={handleSearch}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Looking for job..." if:true={secondStep} class="slds-text-align_center">
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </lightning-card>
+
+    <lightning-card class='slds-text-align_center' title="Awesome results!" if:true={thirdStep}>
+        <p class=slds-text-title_bold>Average earnings UZ: {earnings}</p>
+        <div class="slds-m-top_small slds-m-bottom_medium slds-align_absolute-center">
+            <lightning-button class="slds-m-left_x-small" variant="brand" label="Check job offers" onclick={handleRedirect}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
