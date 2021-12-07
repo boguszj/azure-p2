@@ -6,7 +6,7 @@
 - [Kalata Krzysztof](https://github.com/KrzysztofKalata)
 - [Ruciński Konrad](https://github.com/rucinsk1)
 
-## [Link do prezentacji]
+## https://www.youtube.com/watch?v=CkCQ-Hc8LcQ
 
 
 ## Architektura + stos technologiczny
