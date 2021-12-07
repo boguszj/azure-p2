@@ -15,6 +15,8 @@ https://www.youtube.com/watch?v=CkCQ-Hc8LcQ
   - **Salesforce** - platforma oferująca dostęp do aplikacji końcowej, to w niej wprowadzamy dane, które przekazywane są do Modelu poprzez Container Instance.
   - **Azure Functions** - pozwala na regularne uruchamianie scrapowania aktualizacjego bazę ofert; implementacja w TypeScriptcie (rozszerzeniu JavaScriptu dodającego przede wszystkim typowanie), uruchamiana w NodeJS (środowisku uruchomieniowym JavaScript server-side)
   - **Blob Storage** - pozwala na zapis (przez scraper) i odczyt (podczas uczenia modelu) danych dotyczących ofert z [JustJoinIT](https://justjoin.it/)
+  - **Azure Machine Learning** - pozwala na operacje związane z tworzeniem oraz trenowaniem modeli
+  - **Container Instance** - umożliwia komunikowanie się z modelem poprzez API
   
 ### Scraper  
 Skrypt NodeJS działający w postaci Azure Functions aktualizujący dane w Blob Storage.
